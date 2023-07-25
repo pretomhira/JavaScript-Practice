@@ -1,11 +1,12 @@
 import styles from "./page.module.css";
 
-import { removeFalsy } from "./practice";
+import { makeBoolean } from "./practice";
 
 export default function Home() {
-  const falsyArray = [1, "test", "", null, 0, "fruit", { key: "value" }];
-  const result = removeFalsy(falsyArray);
-  console.log(result);
+  const result1 = makeBoolean("test");
+  const result2 = makeBoolean(null);
+  console.log(result1);
+  console.log(result2);
 
   return (
     <main className={styles.main}>
