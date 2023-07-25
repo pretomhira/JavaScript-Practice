@@ -1,4 +1,4 @@
-export default function countDuplicate(arr) {
+export function countDuplicate(arr) {
   const countValue = {};
 
   const test = arr.map((value) => {
@@ -10,4 +10,8 @@ export default function countDuplicate(arr) {
   }));
 
   return arryObject;
+}
+export function removeFalsy(arr) {
+  const truthyValue = arr.filter(Boolean);
+  return truthyValue;
 }
